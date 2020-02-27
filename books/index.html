@@ -188,7 +188,6 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
-  <div class="reading-progress-bar"></div>
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
 
 
@@ -609,44 +608,31 @@ for (var i = 0; i < firstpages.length; i++) {
     </span>
     <span title="站点阅读时长">1 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-<div id="days"></div>
-  </script>
-  <script language="javascript">
-  function show_date_time(){
-  window.setTimeout("show_date_time()", 1000);
-  BirthDay=new Date("11/29/2019 20:00:00");
-  today=new Date();
-  timeold=(today.getTime()-BirthDay.getTime());
-  sectimeold=timeold/1000
-  secondsold=Math.floor(sectimeold);
-  msPerDay=24*60*60*1000
-  e_daysold=timeold/msPerDay
-  daysold=Math.floor(e_daysold);
-  e_hrsold=(e_daysold-daysold)*24;
-  hrsold=setzero(Math.floor(e_hrsold));
-  e_minsold=(e_hrsold-hrsold)*60;
-  minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
-  seconds=setzero(Math.floor((e_minsold-minsold)*60));
-  document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"时"+minsold+"分"+seconds+"秒";
-  }
-  function setzero(i){
-  if (i<10)
-  {i="0" + i};
-  return i;
-  }
-  show_date_time();
-  </script>
-  
-  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.1
-  </div>
 <div class="theme-info">
   <div class="powered-by"></div>
   <span class="post-count">博客全站共74字</span>
 </div>
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
